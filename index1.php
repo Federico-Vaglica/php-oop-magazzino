@@ -3,9 +3,11 @@ require_once  'Storage/magazzino.php';
 require_once  'Storage/IT_items.php';
 
 
-// $pc = new Storage('lilo','lilo','lilo');
+// $pc = new Storage('Thinkpad','Laptop',10,4);
 // var_dump($pc);
 
-$pc1 = new Computer('lolo','lolo','lolo');
+$pc1 = new Computer('Thinkpad','Laptop',10,4);
 var_dump($pc1);
+
+
 ?>

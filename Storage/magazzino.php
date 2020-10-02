@@ -9,10 +9,11 @@ class Storage {
     public $quantity;
     public $price;
 
-    public function __construct($_name,$_category,$_price){
+    public function __construct($_name,$_category,$_quantity = 0,$_price = 0){
         $this->name = $_name;
         $this->category = $_category;
         $this->price = $_price;
+        $this->quantity = $_quantity;
     }
 
     public function getName(){
@@ -22,9 +23,11 @@ class Storage {
     public function getPrice(){
         return $this ->price;
     }
+
+    // public function setQuantity&&Price($_quantity,$_price) 
 }
 
-$auto = new Storage('tizio','caio',3);
-echo $auto -> getPrice();
-// var_dump(get_class_methods($auto));
+// $auto = new Storage('tizio','caio',3);
+// echo $auto -> getPrice();
+// // var_dump(get_class_methods($auto));
 ?>
